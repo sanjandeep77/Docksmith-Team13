@@ -21,6 +21,14 @@ Usage (called by CLI in build.py):
     )
 """
 
+# COMMIT MESSAGE:
+# Implement Build Engine core with layer caching and instruction execution
+# - Build state management (WORKDIR, ENV, CMD, layers)
+# - FROM, COPY, RUN instruction handlers
+# - Delta-layer strategy for efficient storage
+# - Cache key computation and lookup integration
+# - Image manifest generation and final output
+
 import datetime
 import glob as glob_mod
 import json

@@ -6,6 +6,13 @@ Validates that only the 6 allowed opcodes are used.
 Fails immediately with a clear error message and line number on any invalid instruction.
 """
 
+# COMMIT MESSAGE:
+# Implement Docksmithfile parser with instruction validation
+# - Parse and validate 6 allowed opcodes (FROM, COPY, RUN, WORKDIR, ENV, CMD)
+# - Line-by-line parsing with clear error reporting
+# - Instruction format validation (JSON for CMD, KEY=VALUE for ENV)
+# - Require FROM as first instruction
+
 import json
 from typing import List
 from types_ import Instruction

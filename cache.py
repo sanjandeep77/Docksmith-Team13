@@ -14,6 +14,13 @@ Cache index lives at ~/.docksmith/cache/index.json
   { "<cache_key>": "<layer_digest>" }
 """
 
+# COMMIT MESSAGE:
+# Add deterministic cache key generation and lookup logic
+# - SHA-256 based cache keys from instruction state
+# - Source file hashing for COPY instructions
+# - Cache index persistence at ~/.docksmith/cache/index.json
+# - Cache hit/miss validation with disk verification
+
 import hashlib
 import json
 import os

@@ -12,6 +12,13 @@ This is the user-facing entry point for the build command.
 When Person A and B are done, this file wires everything together.
 """
 
+# COMMIT MESSAGE:
+# Add CLI entry point for docksmith build command
+# - Argument parsing for -t/--tag and --no-cache options
+# - Build context validation
+# - Integration with engine and parser modules
+# - User-friendly error handling and exit codes
+
 import argparse
 import sys
 import os
